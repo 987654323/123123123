@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(255, 0, 0);
+  }
+  img.dotted {
+      border-style: dotted;
+      border-width: 20px;
+  }
+  img.double {
+      border-style: double;
+      border-width: 20px;
+  }
+  .obrazy{
+      margin-top: 20px;
+      display:flex;
+      justify-content:center;
+  }
+  #m1, #m2, #m3{
+      display: none;  
+      border: 5px solid #242424;
+  }
+    .shadow{
+       box-shadow: 10px 10px 10px;
+      }

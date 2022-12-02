@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="kod1.css">
+</head>
+<body>
+<div class="obrazy">
+<img src="hokej.jpg" class="dotted" alt="hokej" width="300px" height="300px" id="z1">
+<img src="hokej2.jpg" class="double" alt="hokej2" width="300px" height="300px" id="z2">
+<img src="hokej3.jpg" class="shadow" alt="hokej3" width="300px" height="300px" id="z3">
+</div>
+<div class="obrazy">
+<img src="mysz.jpg"  alt="mysz" width="300px" height="300px" id="m1">
+<img src="mysz2.jpg" alt="mysz2" width="300px" height="300px" id="m2">
+<img src="mysz3.jpg" alt="mysz3" width="300px" height="300px" id="m3">
+</div>
+
+
+<script>
+document.getElementById("z1").addEventListener("mouseover", myFunction1);     
+document.getElementById("z2").addEventListener("mouseout", myFunction2);
+document.getElementById("z3").addEventListener("click", myFunction3);
+
+    function myFunction1() {
+        document.getElementById("m3").style.display = "none";
+        document.getElementById("m2").style.display = "none";
+        document.getElementById("m1").style.display = "block";
+    }   
+    function myFunction2() {
+        document.getElementById("m1").style.display = "none";
+        document.getElementById("m3").style.display = "none";
+        document.getElementById("m2").style.display = "block";
+    }
+    function myFunction3() {
+        document.getElementById("m2").style.display = "none";
+        document.getElementById("m1").style.display = "none";
+        document.getElementById("m3").style.display = "block";
+    }
+</script>
+</body>
+</html>
